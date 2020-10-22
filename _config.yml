@@ -9,7 +9,19 @@ kramdown:
   input: GFM
 relative_permalinks: false
 collections:
-- entries
+  metadata_specs:
+    output: true
+    layout: default
+  entries:
+  institutions:
+    output: true
+    layout: default
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "institutions"
+#     values:
+#       layout: "institution"
 sass:
   sass_dir: _sass
   style: :compressed

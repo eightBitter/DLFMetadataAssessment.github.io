@@ -1,0 +1,14 @@
+---
+layout: default
+title: Test Collection
+---
+<h1>Test Collection</h1>
+
+<ul>
+    {% for institution in site.institutions %}
+        <li>
+            <h2>{{ institution.name }}</h2>
+            <p>{{ institution.content | markdownify }}</p>
+        </li>
+    {% endfor %}
+</ul>
