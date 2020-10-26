@@ -10,7 +10,7 @@ title: Metadata Specs - Browse by Type - Metadata Application Profiles
         {% if spec.type == "application-profile" %}
             <li>
                 <h2><a href="{{ spec.url }}">{{ spec.title }}</a></h2>
-                <p>{{ spec.excerpt | markdownify }}</p>
+                <p>{{ spec.description }}</p>
             </li>
         {% endif %}
     {% endfor %}

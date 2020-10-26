@@ -11,17 +11,22 @@ relative_permalinks: false
 collections:
   metadata_specs:
     output: true
-    layout: default
   entries:
   institutions:
     output: true
-    layout: default
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "institutions"
-#     values:
-#       layout: "institution"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "metadata_specs"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "institutions"
+    values:
+      layout: "default"
 sass:
   sass_dir: _sass
   style: :compressed

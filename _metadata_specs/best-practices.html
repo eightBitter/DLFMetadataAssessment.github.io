@@ -10,7 +10,7 @@ title: Metadata Specs - Browse by Type - Best Practices
         {% if spec.type == "best-practices" %}
             <li>
                 <h2><a href="{{ spec.url }}">{{ spec.title }}</a></h2>
-                <p>{{ spec.excerpt | markdownify }}</p>
+                <p>{{ spec.description }}</p>
             </li>
         {% endif %}
     {% endfor %}
